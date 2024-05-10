@@ -1,0 +1,112 @@
+/* index.css */
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+/* Login css */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .formContainer {
+    background-color: white;
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    .formWrapper {
+      background-color: rgb(247, 236, 223);
+      padding: 20px 35px;
+      border: 1px solid white;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      gap: 10px;
+  
+      .logo {
+        color: #85847d;
+        font-size: 24px;
+        font-weight: bold;
+      }
+      .title {
+        color: #a2967e;
+        font-size: 18px;
+        font-weight: bold;
+      }
+  
+      form {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+  
+        input {
+          padding: 15px 25px;
+          border: none;
+  
+          &:focus {
+            outline: none;
+          }
+  
+          &::placeholder {
+            color: rgb(175 175 175);
+          }
+        }
+  
+        label {
+          display: flex;
+          align-items: center;
+  
+          img {
+            width: 30px;
+            margin-left: 20px;
+          }
+  
+          span {
+             color:  rgb(159, 116, 199);
+            font-size: 0.8rem;
+            margin-left: 10px;
+          }
+        }
+  
+        button {
+          background-color: #85847d;
+          padding: 10px;
+          border: none;
+          color: white;
+          cursor: pointer;
+  
+          &:focus {
+            outline: 1px solid rgb(72, 61, 61);
+          }
+        }
+      }
+      p {
+        color: rgb(159, 116, 199);
+        margin-top: 10px;
+  
+        span{
+          color:rgb(128, 66, 187);
+          cursor: pointer;
+  
+          &:hover{
+              color: rgb(110, 27, 186);
+          }
+        }
+      }
+    }
+  } 
+  .gradient-custom-2 {
+    /* fallback for old browsers */
+    background: #fbc2eb;
+    
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: -webkit-linear-gradient(to right, rgba(251, 194, 235, 1), rgba(166, 193, 238, 1));
+    
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(to right, rgba(251, 194, 235, 1), rgba(166, 193, 238, 1))
+    }
+
